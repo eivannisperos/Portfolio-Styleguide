@@ -1,3 +1,69 @@
+@font-face {
+  font-family: "vcr-osd-mono";
+  src: url("fonts/VCR_OSD_MONO_1.001.ttf") format("truetype");
+}
+
 * {
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a, p {
+  font-family: "vcr-osd-mono", sans-serif;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1rem;
+}
+
+h2:hover {
+
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+a {
+  margin: 1rem;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
+
+
+code p {
+  font-family: monospace;
+}
+
+/**styleguide structures**/
+
+.flex-display-column, .flex-display-row, .flex-display {
+  display: flex;
+}
+
+.flex-display-row {
+  flex-direction: row;
+}
+
+.flex-display-column {
+  flex-direction: column;
+}
+
+.sub-section {
+  margin: 1rem;
+}
+
+/*****************************************************
+styleguide navigation
+******************************************************/
+#nav-container {
+  width: 30%;
 }
